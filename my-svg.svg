@@ -1,0 +1,14 @@
+<svg version = "1.1" xmlns = "http://www.w3.org/2000/svg">
+
+ <style>
+
+ circle {
+    fill: #fff;
+    position: absolute;
+    margin-right:10px
+ }
+</style> 
+
+
+<circle cx="175" cy="75" r="75"/>
+</svg>

@@ -75,33 +75,35 @@ a{
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 60%;
+    height: 70%;
     margin-top: 100px;
 }
  
-/* .divisions {
+ /* .divisions {
     border: 1px solid green;
-}   */
+}      */
 
  .divisions:first-child{
     border-bottom: 3px solid tan;
-    color:rgb(0, 0, 65);
+    grid-row: 1 / span 2;
+    position:relative ;
 } 
 
 .divisions:nth-child(2){
-
-    grid-row: 1 / span 2;
+    color:rgb(0, 0, 65);
 }
 
 div > img[alt=image-of-phil] {
-    width: 50%;
-    padding-top:5%;
-    padding-left: 25%;
+    width: 60%;
+    padding-left: 0%;
+    position: absolute;
+    left: 20px;
+    /* float: left; */
 }
 
 h2.big-text {
     font-size: 3.0rem;
-    margin-block-start: 0;
+    margin-block-start: 10%;
     margin-block-end: 0;
     padding-bottom: 0;
     font-family: 'Limelight','cursive';
@@ -116,14 +118,15 @@ h4.small-text {
 }
 
 input[type=submit]{
-    margin-left: 0;
-    margin-top: 8%;
+    margin-left:20%;
+    margin-top: 0%;
     height: 45px;
     width: 20%;
     border-radius: 20px;
     border:0;
     background-color:rgb(253, 90, 31);
     color: #fff;
+    font-weight: bold;
 }
 
 input[type=submit]:hover {
@@ -139,7 +142,8 @@ input[type=submit]:hover {
 
 #w-e {
     width:33.3%;
-    border-right:1px solid tan;   
+    border-right:1px solid tan;
+    margin-block-start: 0;   
 }
 
 #skills{
@@ -151,16 +155,24 @@ input[type=submit]:hover {
 
 #references {
     width:33.3%;
-       
 }
 
-h3.c2-heads {
-    text-align: left;
-    margin-left: 10%;
+#c2-heads {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin:auto;
+}
+
+.c2-heads {
+    text-align: center;
     background-color:rgb(253, 90, 31);
-    width:40%;
+    width:100%;
     color:whitesmoke;
     font-size: 1.4rem;
+    margin-top: 0;
+    height:100%;
+    font-weight: bold;
 }
 
 ol{
@@ -177,7 +189,7 @@ div.for-skills {
 
 div.for-w-e {
     width: 80%;
-    margin-top: 10%;
+    margin-top: 10%; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 20px;
@@ -197,13 +209,18 @@ h4[id=soft]{
     margin-top: 0;
 }
 
-.c3-top {
+.c3-top, #c4-top {
     margin: auto;
     width: 55%;
     height: 10%;
     text-align: center;
     background-color: rgb(253, 90, 31);
     color:whitesmoke;
+}
+
+#sub{
+    text-align: center;
+    font-style: oblique;
 }
 
 .c3-body {
@@ -222,13 +239,21 @@ iframe {
     
     margin:auto;
     width: 100%;
-    height: 10rem;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.pics-div {
+/* .pics-div {
     border:  1px solid tan;
+} */
+
+img[alt=gallery] {
+    width: 99%;
+    height:100%;
+}
+
+img[alt=gallery]:hover {
+    border:2px solid #e6e6e6;
 }
 
 footer {
@@ -236,5 +261,10 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #e6e6e6;
     color:rgb(0, 0, 65);
+    font-weight: bolder;
 }
 
+circle {
+    background-color:#fff;
+    position:absolute;
+}
