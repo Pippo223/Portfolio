@@ -144,6 +144,10 @@ input[type=submit]{
     font-weight: bold;
 }
 
+input[type=submit]{
+    cursor: pointer;
+}
+
 p#hire {
     display: none;
 }
