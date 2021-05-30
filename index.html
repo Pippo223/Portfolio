@@ -15,8 +15,6 @@
 </head>
 <body>
 
-    
-
     <div id = "container1">
         <div class = "header">
 
@@ -27,25 +25,26 @@
 
             <div class = "right-header">
                <div id = "top-right">
-                    <div class = "top-right-1">HOME</div>
-                    <div class = "top-right-1">ABOUT ME</div>
-                    <div class = "top-right-1">CONTACT</div>
-                  
+                   <div class = "top-right-1">
+                        <div><a href="#main"> HOME</a></div>
+                        <div><a href="#c2-heads">ABOUT</a></div>
+                        <div><a href="#foot">CONTACT</a></div>
+                    </div>
                  
                      <div class = "top-right-2">
                         <div class = "sm-links"><a class="zmdi zmdi-linkedin" href="linkedin.com/in/philip-asare-ab9892140/" target=_blank></a></div>
                         <div class = "sm-links"><a class="zmdi zmdi-facebook" href="https://web.facebook.com/philip.asare2/" target=_blank></a></div>
                         <div class = "sm-links"><a class="zmdi zmdi-twitter" href="https://twitter.com/bigphilnanak" target=_blank></a></div>
+                        <div class = "sm-links"><a class="zmdi zmdi-instagram" href="https://instagram.com/bigphilnanak" target=_blank></a></div>
                      </div>
                 </div>
 
          </div>
 
         </div>
-
+        <img src="my-svg.svg" alt="circle">
         <div id = "main">
-
-            <div class="divisions"><img src="my-svg.svg" alt=""><img src="images/phil-image.png" alt="image-of-phil"></div>
+            <div class="divisions"><img src="images/phil-image.png" alt="image-of-phil"></div>
 
             <div class="divisions">
                 <h2 class = "big-text">Philip Owusu Asare</h2>
@@ -54,29 +53,31 @@
             </div>
             
             <div class="divisions">
-                <form action="">
+                <form action="#foot">
                     <input type ="submit" value = "Hire me">
 
                 </form>
+
+                <p id="hire"><a href="#foot">Hire me</a></p>
                 
             </div>
 
           
 
         </div>
-
+        
     </div>
 
     <div id = "c2-heads">  
-        <div class = "c2-heads">Work Experience</div> 
-        <div class = "c2-heads">Skills</div>
-        <div class = "c2-heads">References</div>
+        
+        
+       
     </div>
 
     <div id="container2">
 
         <div id = "w-e">
-           
+            <div class = "c2-heads">Work Experience</div> 
           
            
             <div class="for-w-e">
@@ -91,7 +92,7 @@
 
                 <div>2019 - 2020</div>
                 <div>IT Personnel</div>
-                <div>Khalmax Software and Robotics</div>
+                <div>Khalmax Robotics</div>
 
                 
                 <div>2018 - 2019</div>
@@ -114,6 +115,7 @@
         </div>
 
         <div id = "skills">
+            <div class = "c2-heads">Skills</div>
             <h4 id="tech"> Technical Skills </h4>
             <div class = for-skills>
 
@@ -157,31 +159,36 @@
 
         </div>
 
-        <div id = "references">
+        <div id = "projects">
+            <div class = "c2-heads">Projects</div>
             <ol>
-           <li> <p> <strong>Dr. Godfrey Mills</strong> </p> 	
-            <p> Head of Computer Engineering Department</p> 
-            <p>University of Ghana Legon </p>
-            <p>Phone Number: +233269073163</p>	
-            <p>Email: gmills@ug.edu.gh </p>
+           <li> <p> <strong>Personal Site</strong> </p> 	
+            <p> This was an introduction to HTML project where only HTML was used
+                to design a porfolio or CV of sorts
+            </p> 
+            <p><span class="zmdi zmdi-github"></span> <a href="https://github.com/Pippo223/Personal-Site" target="_blank">Personal-Site</a></p>
            
-            <p><strong> <a href="https://www.ug.edu.gh/ce/staff/godfrey-mills-bsc-elect-eng-kumasi-msc-phd-electronics-comp-gunma-japan" 
-                target = _blank>Dr. Godfrey Mills' Website</a></strong></p>
                 <br>
     
             </li>
 
             <li>
-                <p><strong>Dr. Raymond Aborigo</strong></p>
-<p>Head of Research Team</p>
-<p>Navrongo Health Research Center</p>
-<p>Phone Number: +233205908860</p> 	
-<p>Email: rayborigo@yahoo.com</p>
-<p><strong> <a href="http://www.navrongo-hrc.org/blog/profile-dr-raymond-akawire-aborigo" 
-    target = _blank>Dr. Raymond Aborigo's Website</a></strong></p>
+                <p><strong>Media Player Design</strong></p>
+<p>This project required the addition of audios and videos onto a webpage, and controls for this video. 
+    It required the use of HTML only </p>
+<p><span class="zmdi zmdi-github"></span> <a href="https://github.com/Pippo223/Media-Player" target="_blank">Media-Player</a></p>
+
                 <br>
 
             </li>
+
+            <li>
+                <p><strong>The Replica</strong></p>
+<p>The task for this project was to replicate the first page layout of any popular website using HTML and CSS only.</p>
+<p><span class="zmdi zmdi-github"></span> <a href="https://github.com/Pippo223/Replica" target="_blank">Replica</a></p>
+
+            </li>
+
 
             </ol>
         </div>
@@ -190,20 +197,20 @@
     <div class = "container3">
 
             <div class = "c3-top">
-                    <h2>MY CURRENT WORKSPACE</h2>
+                    <h2 class="space">MY CURRENT WORKSPACE</h2>
                     
             </div>
             <h4 id = "sub">My Experience so far at Amalitech</h4>
             <div class = "c3-body">
-                <iframe src="https://www.youtube.com/embed/QIC1qAYeZmc" title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        Playing football</iframe>
+                <iframe src="https://www.youtube.com/embed/HoDL-2xMs14" 
+                title="My Amalitech Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
     </div>
 
     <div id="c4-top">
-        <h2>Photo Gallery</h2>
+        <h2 class="space">Photo Gallery</h2>
     </div>
 
     <div class = "container4">
@@ -213,10 +220,10 @@
         <div class = "pics-div"><img src="images/4.jpg" alt="gallery"></div>
     </div>
 
-    <footer>
-        <p>Email: philip.asare@amalitech.org</p>
-        <p id = "phone-number">Phone Number: +233247731807</p>
-        <p id = "website">website: bigphilnanakblog.wordpress.com</p>
+    <footer id="foot">
+        <p><i class="zmdi zmdi-email"></i> philip.asare@amalitech.org</p>
+        <p><i class="zmdi zmdi-smartphone"></i> +233247731807</p>
+        <p><i class="zmdi zmdi-open-in-browser"></i><a href="http://bigphilnanakblog.wordpress.com/">bigphilnanakblog.wordpress.com</a></p>
     </footer>
 
 

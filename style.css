@@ -4,9 +4,10 @@
 
 #container1 {
 width: 100%;
-height: 600px;
+height:80vh; 
 margin: 0;
 background-color:#e6e6e6;
+position: relative;
 }
 
 .header {
@@ -47,27 +48,34 @@ h3[id=phil] {
 }
 
  .top-right-1 {
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
 } 
 
 .top-right-2 {
     display:flex;
-    margin-top: 25px;
+    margin-top: 4%;
+    margin-left: 2%;
 }
 
 div.sm-links {
     border: 2px solid rgb(42, 102, 214);
-    width:30px;
-    height: 30px;
-    border-radius: 20px;  
-    margin-left: 20px; 
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;  
+    margin-left: 5px; 
 } 
 
 a{
     padding-left: 8px;
     padding-top: 5px;
     text-decoration: none;
+    color:rgb(0, 0, 65);
+}
+
+a:hover {
+    color:rgb(253, 90, 31);
 }
 
 #main {
@@ -75,18 +83,17 @@ a{
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 70%;
-    margin-top: 100px;
+     height: 70%; 
+    margin-top: 6.3%;
 }
  
  /* .divisions {
     border: 1px solid green;
-}      */
+}       */
 
  .divisions:first-child{
-    border-bottom: 3px solid tan;
     grid-row: 1 / span 2;
-    position:relative ;
+    position:relative ; 
 } 
 
 .divisions:nth-child(2){
@@ -94,11 +101,19 @@ a{
 }
 
 div > img[alt=image-of-phil] {
-    width: 60%;
+    width: 320px;
     padding-left: 0%;
-    position: absolute;
-    left: 20px;
-    /* float: left; */
+    position: absolute; 
+     left: 20px; 
+     /* float: left;  */
+}
+
+img[alt=circle] {
+    width:80%;
+    position:absolute;
+    left: 15%;
+    top:30%;
+
 }
 
 h2.big-text {
@@ -119,7 +134,7 @@ h4.small-text {
 
 input[type=submit]{
     margin-left:20%;
-    margin-top: 0%;
+    margin-top: 5%;
     height: 45px;
     width: 20%;
     border-radius: 20px;
@@ -129,15 +144,21 @@ input[type=submit]{
     font-weight: bold;
 }
 
+p#hire {
+    display: none;
+}
+
 input[type=submit]:hover {
     background-color:orangered;
 }
 
+
 #container2 {
     width: 100%;
     display: flex;
-    height:35rem;
+    height:100%; 
     border-bottom:3px solid rgb(253, 90, 31);
+    background-color: aquamarine;
 }
 
 #w-e {
@@ -146,45 +167,38 @@ input[type=submit]:hover {
     margin-block-start: 0;   
 }
 
-#skills{
+#skills {
     width:33.3%;
     text-align: center;
-    margin-left: 5%;
     border-right:1px solid tan;
 }
 
-#references {
+#projects {
     width:33.3%;
 }
 
-#c2-heads {
+/* #c2-heads {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     margin:auto;
-}
+} */
 
 .c2-heads {
+    margin: auto;
     text-align: center;
     background-color:rgb(253, 90, 31);
     width:100%;
     color:whitesmoke;
     font-size: 1.4rem;
     margin-top: 0;
-    height:100%;
+    /* height:100%; */
     font-weight: bold;
+    margin:auto;
 }
 
 ol{
     margin-top: 10%;
-}
-
-div.for-skills {
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
-    gap: 10px;
 }
 
 div.for-w-e {
@@ -192,13 +206,22 @@ div.for-w-e {
     margin-top: 10%; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 20px;
-    row-gap: 30px;
-    column-gap: 20px;
+    padding-left: 5%;
+    row-gap: 10%;
+    column-gap: 15%;
+}
+
+div.for-skills {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    gap: 5%;
+    text-align: center;
 }
 
 h4[id=tech], h4[id=soft] {
-    text-align: left;
+    text-align: center;
 }
 
 h4[id=tech]{
@@ -206,7 +229,7 @@ h4[id=tech]{
 }
 
 h4[id=soft]{
-    margin-top: 0;
+    margin-top: 10%;
 }
 
 .c3-top, #c4-top {
@@ -226,7 +249,7 @@ h4[id=soft]{
 .c3-body {
     margin:auto;
     width: 55%;
-    height: 30rem;
+    height: 40vw;
     margin-bottom: 5%;
 }
 
@@ -257,14 +280,212 @@ img[alt=gallery]:hover {
 }
 
 footer {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #e6e6e6;
     color:rgb(0, 0, 65);
     font-weight: bolder;
+    font-size: larger;
 }
 
-circle {
-    background-color:#fff;
-    position:absolute;
+
+
+@media (max-width: 900px) {
+img[alt=circle] {
+    width:50%;
 }
+
+}
+
+@media (max-width: 850px) {
+    
+    #top-right {
+        display:block;
+        margin-top: 4%;
+        margin-left: 2%;
+    }
+
+    .top-right-1 {
+        margin-left: 0;
+    }
+
+    input[type=submit] {
+        display:none;
+    }
+
+    p#hire {
+        display: inline-block;
+    }
+
+    div > img[alt=image-of-phil] {
+        width: 250px;
+    }
+
+    img[alt=circle] {
+        top:20%;
+        left:7.5%;
+    }
+}
+
+@media (max-width: 685px) {
+    h2.big-text {
+        font-size: 1.5rem;
+    }
+    
+    h4.small-text {
+        font-size: 1rem;
+    }
+
+    #container1 {
+        height: 50vh;
+    }
+
+    #container2 {
+        display: block;
+    }
+
+    div > img[alt=image-of-phil] {
+        width: 200px;
+    }
+
+    #w-e  {
+        width:80%;
+        margin-left:15%;
+        margin-bottom: 50%;
+        border-right: 0px;
+    }
+
+    #skills  {
+        width:80%;
+        margin-left:15%;
+        margin-bottom: 15%;
+        border-right: 0px;
+    }
+
+    #projects  {
+        width:80%;
+        margin-left:15%;
+    }
+
+    .container4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 585px) {
+    img[alt=circle] {
+        top:20%;
+        left:0;
+    }
+}  
+
+@media (max-width: 559px) {
+    h2.big-text {
+        font-size: 1.2rem;
+    }
+    
+    h4.small-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 525px) {
+
+    div > img[alt=image-of-phil] {
+        width: 80%;
+    }
+
+    img[alt=circle] {
+        width:10%;
+       
+        
+    }
+}
+
+    @media (max-width: 435px) {
+        #main {
+            grid-template-columns: 1fr;
+        }
+
+        div > img[alt=image-of-phil] {
+           
+            width: 100px;
+        }
+
+        .divisions:first-child{
+        height: 100px;
+        } 
+    
+    }
+
+    @media (max-width: 350px) {
+     
+        .divisions:first-child{
+        height: 150px;
+        }
+        
+        .top-right-1 {
+            display: block;
+        } 
+    
+    }
+
+    @media (max-width: 330px) {
+     
+       #container2, #container2  {
+           font-size:0.7rem;
+       }
+
+       .c2-heads {
+         font-size: 1rem;
+       }
+
+       .right-header{
+           font-size: 0.5rem;
+       }
+
+       /* .top-right-2 {
+           display:block;
+       } */
+
+       h2.big-text {
+        font-size: 0.8rem;
+    }
+    
+    h4.small-text {
+        font-size: 0.5rem;
+    }
+
+    .container4 {
+        grid-template-columns: 1fr;
+    }
+
+    h2[class=space]{
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    p[id=hire] {
+        font-size: 0.5rem;
+        margin-top: 0;
+        margin-block-start: 0;
+    }
+
+    div.sm-links {
+        border:0px;
+        margin-left: 0;
+        width:20px;
+        height:20px;
+    }
+       
+    }
+
+   
